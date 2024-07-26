@@ -1,0 +1,19 @@
+[
+  { "title": "Basic test with simple input", "input": "hello", "expectedOutput": "hll", "contentLength": 3 },
+  { "title": "Test with multiple spaces and characters", "input": "this, is. a: test!", "expectedOutput": "ths, s. : tst!", "contentLength": 14 },
+  { "title": "Edge case with empty input", "input": "", "expectedOutput": "", "contentLength": 0 },
+  { "title": "Test with no vowels", "input": "rhythm", "expectedOutput": "rhythm", "contentLength": 6 },
+  { "title": "Test with only vowels", "input": "aeiou", "expectedOutput": "", "contentLength": 0 },
+  { "title": "Test with special characters", "input": "h3ll@ w*rld!", "expectedOutput": "h3ll@ w*rld!", "contentLength": 12 },
+  { "title": "Test with spaces only", "input": "  ", "expectedOutput": "  ", "contentLength": 2 },
+  { "title": "Test with punctuation", "input": "hello, world!", "expectedOutput": "hll, wrld!", "contentLength": 10 },
+  { "title": "Test with mixed case", "input": "HELLo WoRLd", "expectedOutput": "HLL WRLd", "contentLength": 8 },
+  { "title": "Test with accented characters", "input": "héllò wórld", "expectedOutput": "hll wrld", "contentLength": 8 },
+  { "title": "Test with Japanese characters", "input": "こんにちは", "expectedOutput": "こんにちは", "contentLength": 5 },
+  { "title": "Test with numbers only", "input": "12345", "expectedOutput": "12345", "contentLength": 5 },
+  { "title": "Test with alphanumeric input", "input": "h3ll0", "expectedOutput": "h3ll0", "contentLength": 5 },
+  { "title": "Test with long input string", "input": "a very long string with multiple words and characters", "expectedOutput": " vry lng strng wth mltpl wrds nd chrctrs", "contentLength": 43 },
+  { "title": "Test with mixed special characters", "input": "h3ll@, w0rld!", "expectedOutput": "h3ll@, w0rld!", "contentLength": 12 },
+  { "title": "Test with boolean string", "input": "true", "expectedOutput": "tr", "contentLength": 2 },
+  { "title": "Test with padded spaces", "input": " hello ", "expectedOutput": " hll ", "contentLength": 4 }
+]
