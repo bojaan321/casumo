@@ -9,12 +9,9 @@ by removing vowels and handling special cases.
 
 ## Prerequisites
 
-JDK, Maven,
+JDK, Maven, Docker, clone repository
 
 ## Setup
-
-1. **Clone the repository:**
-2. **Install Maven dependencies:**
-    mvn install
-3. **Run tests:**
-    mvn test
+1. **Start Docker service:** docker run -p 8080:8080 -it casumo/devowelizer:latest
+2. **Install Maven dependencies:** mvn install
+3. **Run tests:** mvn test
